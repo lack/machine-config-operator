@@ -1,0 +1,6 @@
+mode: 0755
+path: "/usr/local/bin/nsenterCmns"
+contents:
+  inline: |
+    #!/bin/bash
+    nsenter --mount=/run/container-mount-namespace/mnt "$@"
